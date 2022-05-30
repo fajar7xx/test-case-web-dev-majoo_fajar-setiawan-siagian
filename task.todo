@@ -1,0 +1,18 @@
+lengkapi:
+    ☐ dokumen teknis
+        ☐ erd 10%
+        ☐ DML 5%
+        ☐ activity diagram 5%
+        ☐ use case diagram 5%
+    ☐ coding 50%
+        ☐ gunakan database mysql/postgresql
+        ☐ menggunakan form validation server side
+            ☐ semua field mandatory
+            ☐ nama product unique
+        ☐ menggunakan php framework
+        ☐ gunakan template engine bootstrap, jquery
+    ☐ point plus
+        ☐ git flow 5%
+        ☐ optimisasi db 5%
+        ☐ restfull api 5%
+        ☐ prinsip OOP 10%
