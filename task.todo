@@ -1,7 +1,7 @@
 lengkapi:
     ☐ dokumen teknis
-        ☐ erd 10%
-        ☐ DML 5%
+        ✔ erd 10% @done(22-05-30 13:27)
+        ✔ DML 5% @done(22-05-30 13:27)
         ☐ activity diagram 5%
         ☐ use case diagram 5%
     ☐ coding 50%

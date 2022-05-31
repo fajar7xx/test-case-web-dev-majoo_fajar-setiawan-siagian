@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use App\Models\Category;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -13,9 +14,10 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $categories = Category::paginate(5);
+        return view('admin.pages.categories.index', compact('categories'));
     }
 
     /**
@@ -25,7 +27,7 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.pages.categories.add');
     }
 
     /**
@@ -36,7 +38,11 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
-        //
+        Category::create([
+            'name' => $request->category
+        ]);
+
+        return redirect()->route('categories.index')->with('success', 'Category has been successfull created');
     }
 
     /**
@@ -58,7 +64,7 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        return view('admin.pages.categories.edit', compact('category'));
     }
 
     /**
@@ -70,7 +76,7 @@ class CategoryController extends Controller
      */
     public function update(UpdateCategoryRequest $request, Category $category)
     {
-        //
+        dd($request->all());
     }
 
     /**
