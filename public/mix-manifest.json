@@ -1,4 +1,8 @@
 {
     "/js/app.js": "/js/app.js",
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/modules/sweetalert2/LICENSE": "/modules/sweetalert2/LICENSE",
+    "/modules/sweetalert2/README.md": "/modules/sweetalert2/README.md",
+    "/modules/sweetalert2/package.json": "/modules/sweetalert2/package.json",
+    "/modules/sweetalert2/sweetalert2.d.ts": "/modules/sweetalert2/sweetalert2.d.ts"
 }

@@ -50,9 +50,15 @@
                 <td>
                     {{$category->name}}
                 </td>
-                <td>
-                   <a href="{{route('categories.edit', $category)}}" class="btn btn-info btn-sm">Edit</a>
-                   <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                <td class="d-flex">
+                    <a href="{{route('categories.edit', $category)}}" class="btn btn-info btn-sm">Edit</a>
+                    <form action="{{route('categories.destroy', $category)}}" id="delete-category-form" method="POST"
+                        class="mx-1" onsubmit="return confirm('Are you sure?')">
+                        @csrf
+                        @method('DELETE')
+                        <button id="delete-category"
+                            class="btn btn-danger btn-sm" type="submit">Delete</button>
+                    </form>
                 </td>
             </tr>
             @endforeach
