@@ -18,3 +18,5 @@ mix.js("resources/js/app.js", "public/js").postCss(
 );
 
 mix.copyDirectory("node_modules/sweetalert2", "public/modules/sweetalert2");
+mix.copyDirectory("node_modules/summernote", "public/modules/summernote");
+mix.copyDirectory("node_modules/jquery", "public/modules/jquery");

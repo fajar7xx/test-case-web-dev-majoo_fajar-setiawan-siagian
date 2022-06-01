@@ -57,7 +57,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{route('admin')}}" class="nav-link">
                     <span class="sidebar-icon">
                         <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -69,7 +69,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#"
+                <a href="{{route('products.index')}}"
                     class="nav-link d-flex justify-content-between">
                     <span>
                         <span class="sidebar-icon">

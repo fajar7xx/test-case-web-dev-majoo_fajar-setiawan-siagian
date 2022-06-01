@@ -4,5 +4,18 @@
     "/modules/sweetalert2/LICENSE": "/modules/sweetalert2/LICENSE",
     "/modules/sweetalert2/README.md": "/modules/sweetalert2/README.md",
     "/modules/sweetalert2/package.json": "/modules/sweetalert2/package.json",
-    "/modules/sweetalert2/sweetalert2.d.ts": "/modules/sweetalert2/sweetalert2.d.ts"
+    "/modules/sweetalert2/sweetalert2.d.ts": "/modules/sweetalert2/sweetalert2.d.ts",
+    "/modules/summernote/.babelrc": "/modules/summernote/.babelrc",
+    "/modules/summernote/.editorconfig": "/modules/summernote/.editorconfig",
+    "/modules/summernote/.envrc": "/modules/summernote/.envrc",
+    "/modules/summernote/.eslintrc": "/modules/summernote/.eslintrc",
+    "/modules/summernote/CHANGES.md": "/modules/summernote/CHANGES.md",
+    "/modules/summernote/LICENSE": "/modules/summernote/LICENSE",
+    "/modules/summernote/README.md": "/modules/summernote/README.md",
+    "/modules/summernote/package.json": "/modules/summernote/package.json",
+    "/modules/jquery/AUTHORS.txt": "/modules/jquery/AUTHORS.txt",
+    "/modules/jquery/LICENSE.txt": "/modules/jquery/LICENSE.txt",
+    "/modules/jquery/README.md": "/modules/jquery/README.md",
+    "/modules/jquery/bower.json": "/modules/jquery/bower.json",
+    "/modules/jquery/package.json": "/modules/jquery/package.json"
 }

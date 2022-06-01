@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreProductRequest;
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -12,9 +14,10 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $products = Product::with('category')->paginate(10);
+        return view('admin.pages.products.index', compact('products'));
     }
 
     /**
@@ -24,7 +27,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        return view('admin.pages.products.add', compact('categories'));
     }
 
     /**
@@ -33,9 +37,21 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        //
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images', 'public');
+        }
+
+        $product = Product::create([
+            'name'        => $request->name,
+            'category_id' => $request->category,
+            'price'       => $request->price,
+            'description' => $request->description,
+            'image'       => $path
+        ]);
+
+        return redirect()->route('products.index')->with('success', 'Product has been addedd');
     }
 
     /**
